@@ -63,11 +63,15 @@ def get_weather(lat, lon):
 
     return result
 
+def code(bot, update):
+    update.message.reply_text('https://github.com/amosov-f/vitaliy-pogodkin')
+
 
 def start_bot():
     updater = Updater("930754446:AAHMBGcbo07gitLHIYZ_JeReysaavX7RwAY")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("code", code))
     dp.add_handler(MessageHandler(Filters.location, pass_location))
     updater.start_polling()
     updater.idle()
