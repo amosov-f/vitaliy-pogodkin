@@ -48,7 +48,7 @@ def get_weather(lat, lon):
     url = f'https://api.weather.yandex.ru/v1/forecast?lat={lat}&lon={lon}'
     print(url)
     response = requests.get(url, headers={
-        'X-Yandex-API-Key': '116148fa-0672-4bd4-9c8e-925fb3e20c5d'
+        'X-Yandex-API-Key': 'e6dcb2f6-e5c4-4a6d-b857-13d259a64dbd'
     })
     response.raise_for_status()
     response_json = response.json()
