@@ -1,0 +1,1 @@
+worker: python be_kind_bot.py
