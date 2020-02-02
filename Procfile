@@ -1,1 +1,1 @@
-worker: python be_kind_bot.py
+web: python be_kind_bot.py
